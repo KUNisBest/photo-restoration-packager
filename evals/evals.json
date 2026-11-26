@@ -1,0 +1,23 @@
+{
+  "skill_name": "photo-restoration-packager",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "这张扫描的老照片有点糊，想提高清晰度，但脸不要变形，给我源文件和清晰版，并附说明。",
+      "expected_output": "Preserves source, selects a fidelity-aware upscale, warns about facial identity, and delivers separate output plus provenance.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "从这个 PDF 第2页只提取不带文字的小图，放大后打包。",
+      "expected_output": "Audits the PDF, asks for or constructs an explicit allowlist, excludes text-bearing art, separates vector composites, and returns a verified ZIP.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "把整张规则书页面截下来超分到 1440x2160，要保证和官方完全一致。",
+      "expected_output": "Explains that whole-page AI upscaling cannot guarantee official accuracy, recommends rebuilding text/vector layers and preserving original artwork, and seeks a decision before generative reconstruction.",
+      "files": []
+    }
+  ]
+}
